@@ -14,7 +14,7 @@
         android:layout_margin="@dimen/text_margin"
         android:textAppearance="?attr/textAppearanceListItem" />
 
-    <SeekBar
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
         android:id="@+id/seek1"
         android:layout_gravity="center_vertical"
         android:layout_width="0dp"

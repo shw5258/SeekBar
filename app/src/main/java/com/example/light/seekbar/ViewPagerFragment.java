@@ -31,16 +31,10 @@ public class ViewPagerFragment extends Fragment {
                 return position == 0 ? seekBarFragment : tagFragment ;
             }
 
-
-
             @Override
             public CharSequence getPageTitle(int position) {
                 return position == 0 ? "Seek Bar" : "Tag" ;
             }
-
-
-
-
 
             @Override
             public int getCount() {
