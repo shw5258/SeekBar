@@ -11,11 +11,6 @@ import com.example.light.seekbar.dummy.DummyContent.DummyItem;
 
 import java.util.List;
 
-/**
- * {@link RecyclerView.Adapter} that can display a {@link DummyItem} and makes a call to the
- * specified {@link OnListFragmentInteractionListener}.
- * TODO: Replace the implementation with code for your data type.
- */
 public class SeekBarRecyclerViewAdapter extends RecyclerView.Adapter<SeekBarRecyclerViewAdapter.ViewHolder> {
 
     private final List<DummyItem> mValues;
@@ -42,8 +37,6 @@ public class SeekBarRecyclerViewAdapter extends RecyclerView.Adapter<SeekBarRecy
             @Override
             public void onClick(View v) {
                 if (null != mListener) {
-                    // Notify the active callbacks interface (the activity, if the
-                    // fragment is attached to one) that an item has been selected.
                     mListener.onListFragmentInteraction(holder.mItem);
                 }
             }
@@ -66,12 +59,6 @@ public class SeekBarRecyclerViewAdapter extends RecyclerView.Adapter<SeekBarRecy
             mView = view;
             mIdView = (TextView) view.findViewById(R.id.leftTaste);
             mContentView = (TextView) view.findViewById(R.id.rightTaste);
-        }
-
-        @Override
-        public String toString() {
-
-            return super.toString() + " '" + mContentView.getText() + "'";
         }
     }
 }
